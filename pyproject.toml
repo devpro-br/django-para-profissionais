@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-para-profissionais"
+version = "0.1.0"
+description = "Projeto com código fonte do curso Django para Profisisonais da DevPro"
+authors = ["renzon <renzo.n@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
