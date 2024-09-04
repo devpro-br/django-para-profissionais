@@ -1,5 +1,5 @@
 # django-para-profissionais
-Projeto com código fonte do curso Django para Profisisonais da DevPro
+Projeto com código fonte do curso Django para Profissionais da DevPro
 
 ## Instalação
 
