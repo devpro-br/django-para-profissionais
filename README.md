@@ -1,5 +1,7 @@
 # django-para-profissionais
-Projeto com código fonte do curso Django para Profissionais da DevPro
+Projeto com código fonte do [curso Django para Profissionais](https://l.dev.pro.br/django-para-profissionais.) da DevPro.
+
+[Playlist no YouTube](https://l.dev.pro.br/playlist-django-para-profissionais)
 
 ## Instalação
 
