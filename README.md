@@ -5,10 +5,11 @@ Projeto com código fonte do [curso Django para Profissionais](https://l.dev.pro
 
 ## Instalação
 
-Para instalar o projeto localmente, instale o poetry e use o comando: 
+Para instalar o projeto localmente, instale o poetry e use o comando, com dependências desenvolvimento
+: 
 
 ```bash
-poetry install
+poetry install --with dev
 ```
 
 Ative o ambiente virtual:
@@ -22,3 +23,10 @@ Rode o servidor local:
 ```bash
 python manage.py runserver
 ```
+
+Para rodar testes automáticos com pytest:
+
+```bash
+pytest devpro
+```
+
