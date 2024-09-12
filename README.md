@@ -30,3 +30,10 @@ Para rodar testes automáticos com pytest:
 pytest devpro
 ```
 
+Para rodar testes automáticos com pytest e gerar relatório de cobertura:
+
+```bash
+pytest devpro/ --cov=devpro --cov-report html
+```
+
+
