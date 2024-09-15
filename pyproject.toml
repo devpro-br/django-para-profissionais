@@ -43,9 +43,9 @@ format = 'ruff check . --fix && ruff format .'
 
 run = 'python manage.py runserver'
 
-pre_test = 'task lint && echo PREEETESTEEE'
-test = 'pytest devpro/ -s -x --cov=devpro -vv && echo TEEEST'
-post_test = 'coverage html && echo AFTEEEEEEEER'
+pre_test = 'task lint'
+test = 'pytest devpro/ -s -x --cov=devpro -vv'
+post_test = 'coverage html'
 
 [build-system]
 requires = ["poetry-core"]
