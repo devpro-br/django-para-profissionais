@@ -35,7 +35,7 @@ jobs:
         run: poetry run task lint
 
       - name: Copy instance config variables
-        run: cp ../config/.env-sample .env
+        run: cp ../../config/.env-sample .env
 
       - name: Rodar testes do Django com cobertura
         run: poetry run pytest devpro --cov=devpro --cov-fail-under=82
