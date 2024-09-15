@@ -2,7 +2,7 @@
 name = "django-para-profissionais"
 version = "0.1.0"
 description = "Projeto com código fonte do curso Django para Profisisonais da DevPro"
-authors = ["renzon <renzo.n@gmail.com>"]
+authors = ["renzon <renzo.n@gmail.com>", "Santos <clarasantosmf@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 package-mode = false
@@ -18,12 +18,34 @@ optional = true
 pytest = "^8.3.3"
 pytest-django = "^4.9.0"
 pytest-cov = "^5.0.0"
+ruff = "^0.6.5"
+taskipy = "^1.13.0"
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "devpro.settings"
 python_files = ["test*.py", "*.p_testy"]
 
+[tool.ruff]
+line-length=120
+exclude = ['./devpro/base/migrations']
 
+[tool.ruff.lint]
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+ignore = ["PLR2004"]
+
+[tool.ruff.format]
+quote-style = 'single'
+
+[tool.taskipy.tasks]
+lint = 'ruff check . && ruff check . --diff'
+
+format = 'ruff check . --fix && ruff format .'
+
+run = 'python manage.py runserver'
+
+pre_test = 'task lint && echo PREEETESTEEE'
+test = 'pytest devpro/ -s -x --cov=devpro -vv && echo TEEEST'
+post_test = 'coverage html && echo AFTEEEEEEEER'
 
 [build-system]
 requires = ["poetry-core"]

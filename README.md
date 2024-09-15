@@ -5,8 +5,7 @@ Projeto com código fonte do [curso Django para Profissionais](https://l.dev.pro
 
 ## Instalação
 
-Para instalar o projeto localmente, instale o poetry e use o comando, com dependências desenvolvimento
-: 
+Para instalar o projeto localmente, instale o poetry e use o comando, com dependências desenvolvimento: 
 
 ```bash
 poetry install --with dev

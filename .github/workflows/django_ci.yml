@@ -25,6 +25,9 @@ jobs:
           python -m pip install poetry
           poetry install --with dev --sync
 
+      - name: Lint
+        run: poetry run task lint
+
       - name: Rodar testes do Django com cobertura
         run: poetry run pytest devpro --cov=devpro --cov-fail-under=82
   
