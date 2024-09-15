@@ -17,7 +17,7 @@ Ative o ambiente virtual:
 poetry shell
 ```
 
-Definir variáveis de ambiente em um .env de acordo com o [.env-sample](.env-sample)
+Definir variáveis de ambiente em um .env de acordo com o [.env-sample](./config/env-sample)
 
 Rode o servidor local:
 

@@ -30,7 +30,7 @@ python_files = ["test*.py", "*.p_testy"]
 
 [tool.ruff]
 line-length=120
-exclude = ['./devpro/base/migrations', '.pgdata']
+exclude = ['./devpro/base/migrations']
 
 [tool.ruff.lint]
 select = ['I', 'F', 'E', 'W', 'PL', 'PT']
