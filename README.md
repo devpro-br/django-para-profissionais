@@ -36,3 +36,8 @@ pytest devpro/ --cov=devpro --cov-report html
 ```
 
 
+Utilize também o formato de código configurado com ruff. Você pode consultar todos os gatilhos disponíveis no pyproject.toml:
+
+```
+task lint
+```
