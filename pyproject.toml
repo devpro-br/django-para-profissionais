@@ -10,6 +10,9 @@ package-mode = false
 [tool.poetry.dependencies]
 python = "^3.12"
 django = "^5.1"
+psycopg2 = "^2.9.9"
+dj-database-url = "^2.2.0"
+python-decouple = "^3.8"
 
 [tool.poetry.group.dev]
 optional = true
@@ -27,7 +30,7 @@ python_files = ["test*.py", "*.p_testy"]
 
 [tool.ruff]
 line-length=120
-exclude = ['./devpro/base/migrations']
+exclude = ['./devpro/base/migrations', '.pgdata']
 
 [tool.ruff.lint]
 select = ['I', 'F', 'E', 'W', 'PL', 'PT']
