@@ -167,6 +167,17 @@ files = [
 ]
 
 [[package]]
+name = "mslex"
+version = "1.2.0"
+description = "shlex for windows"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "mslex-1.2.0-py3-none-any.whl", hash = "sha256:c68ec637485ee3544c5847c1b4e78b02940b32708568fb1d8715491815aa2341"},
+    {file = "mslex-1.2.0.tar.gz", hash = "sha256:79e2abc5a129dd71cdde58a22a2039abb7fa8afcbac498b723ba6e9b9fbacc14"},
+]
+
+[[package]]
 name = "packaging"
 version = "24.1"
 description = "Core utilities for Python packages"

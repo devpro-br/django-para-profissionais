@@ -3,6 +3,7 @@ name = "django-para-profissionais"
 version = "0.1.0"
 description = "Projeto com código fonte do curso Django para Profisisonais da DevPro"
 authors = ["renzon <renzo.n@gmail.com>", "Santos <clarasantosmf@gmail.com>"]
+authors = ["renzon <renzo.n@gmail.com>", "Santos <clarasantosmf@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 package-mode = false
@@ -21,6 +22,8 @@ optional = true
 pytest = "^8.3.3"
 pytest-django = "^4.9.0"
 pytest-cov = "^5.0.0"
+ruff = "^0.6.5"
+taskipy = "^1.13.0"
 ruff = "^0.6.5"
 taskipy = "^1.13.0"
 
